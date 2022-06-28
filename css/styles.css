@@ -1,1 +1,86 @@
+* {
+  box-sizing: border-box;
+}
 
+body {
+  align-items: center;
+  background-color: #ffb562;
+  color: white;
+  display: flex;
+  font-family: "B612", sans-serif;
+  font-size: 16px;
+  justify-content: center;
+  margin: 0;
+}
+
+h1 {
+  font-family: "Archivo", sans-serif;
+  font-size: 3.5em;
+  padding-top: 1em;
+  text-align: center;
+  width: 100%;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 800px;
+  width: 90%;
+}
+.mix {
+  border: 3px solid #fff;
+  list-style: none;
+  margin: 0;
+  padding: 0 3em;
+}
+
+.hide {
+  display: none;
+}
+
+.total {
+  padding-bottom: 1em;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+}
+.mix .song {
+  font-size: 1.25em;
+  margin: 0.75em 0;
+  padding: 0.5em;
+}
+
+.mix .song-number {
+  background-color: #f9f2ed;
+  border: 3px solid #f87474;
+  color: #3ab0ff;
+  display: inline-block;
+  margin-right: 0.25em;
+  padding: 0.45em;
+}
+
+button.show-list {
+  align-self: center;
+  background: #f9f2ed;
+  border: 4px solid #f87474;
+  color: #3ab0ff;
+  font-size: 1.25em;
+  line-height: 1.5;
+  margin: 2em 0;
+  padding: 1em;
+  width: 50%;
+}
+
+@media screen and (min-width: 800px) {
+  .mix .song {
+    align-items: center;
+    display: inline-flex;
+    justify-content: flex-start;
+    width: 50%;
+  }
+
+  button.show-list {
+    font-size: 1.5em;
+    width: 25%;
+  }
+}
